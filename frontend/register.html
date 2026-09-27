@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | TaskFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-card">
+
+        <!-- Brand -->
+        <a class="brand center" href="login.html">
+            <span class="brand-mark">T</span>
+            <span>TaskFlow</span>
+        </a>
+
+        <!-- Heading -->
+        <h1>Create your account</h1>
+
+        <p class="muted">
+            Start managing projects with your team.
+        </p>
+
+        <!-- Register Form -->
+        <form id="registerForm">
+
+            <label>
+                Full name
+                <input id="name" name="name" type="text" required autocomplete="off">
+            </label>
+
+            <label>
+                Username
+                <input id="username" name="username" type="text" required autocomplete="off">
+            </label>
+
+            <label>
+                Email
+                <input id="email" name="email" type="email" required autocomplete="off">
+            </label>
+
+            <label>
+                Password
+                <input id="password" name="password" type="password" minlength="6" required autocomplete="new-password">
+            </label>
+
+            <button type="submit" class="primary-btn full">
+                Create Account
+            </button>
+
+        </form>
+
+        <!-- Message -->
+        <div id="message" class="form-message"></div>
+
+        <!-- Login -->
+        <p class="switch">
+            Already registered?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
